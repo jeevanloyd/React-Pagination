@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import ReactPaginate from "react-paginate";
 import { useDispatch } from "react-redux";
-import { PageCount } from "./PageCount";
-import { ProductsDisplay } from "./ProductsDisplay";
+import PageCount from "./PageCount";
+import ProductsDisplay from "./ProductsDisplay";
 
 
 const MainComponent = () => {
@@ -44,7 +44,7 @@ const MainComponent = () => {
     };
     return (
         <>
-            <div id="Produts" className="row d-flex justify-content-between mt-3">
+            <div className="row d-flex justify-content-between mt-3">
                 <div style={{ width: "auto" }}>{total} Products</div>
                 < PageCount limit={limit} setLimit={setLimit} />
             </div>
