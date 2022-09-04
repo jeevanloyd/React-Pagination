@@ -5,6 +5,7 @@ I have used NPM package "react paginate" to achieve Pagnination. Used Bootstrap 
 
 Rather Loading everything on Page load, i Just loaded the Initial 8 contents that arre required to be shown On the UI. As the User clicks next on Paginantion or Increases number of items per page, the data get loaded andd displayed on UI.
 
+I have used Jest Snapshot testing to test the UI components.
 
 ## Available Scripts
 Before running the below Script , 

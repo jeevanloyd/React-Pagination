@@ -1,6 +1,6 @@
 import React from "react";
 
-export const PageCount = (props) => {
+ const PageCount = (props) => {
     return (
 
         <div key={props.limit} className="input-group mb-3" style={{ width: "auto" }}>
@@ -23,3 +23,5 @@ export const PageCount = (props) => {
 
     );
 };
+
+export default PageCount;

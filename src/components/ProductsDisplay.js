@@ -1,6 +1,6 @@
 import React from "react";
 
-export const ProductsDisplay = (props) => {
+ const ProductsDisplay = (props) => {
     return (
         <div key={props.data.id} className="col-md-3 col-12 d-flex justify-content-center">
             <div className="card w-100 mb-3">
@@ -32,3 +32,5 @@ export const ProductsDisplay = (props) => {
         </div>
     );
 };
+
+export default ProductsDisplay;

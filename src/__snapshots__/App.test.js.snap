@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Header Component snapshot testing for Header component 1`] = `
+<div
+  className="d-flex bg-dark text-white justify-content-center py-4"
+>
+  All Products
+</div>
+`;
+
+exports[`Render Main Component snapshot testing for main component 1`] = `"MainComponent"`;
+
+exports[`Render Pagecount Component snapshot testing for Pagecount component 1`] = `
+<div
+  className="input-group mb-3"
+  style={
+    Object {
+      "width": "auto",
+    }
+  }
+>
+  <select
+    aria-label="Default select example"
+    className="form-select"
+    id="pageselect"
+    onChange={[Function]}
+  >
+    <option
+      value="4"
+    >
+      4 per Page
+    </option>
+    <option
+      value="8"
+    >
+      8 per Page
+    </option>
+    <option
+      value="16"
+    >
+      16 per Page
+    </option>
+    <option
+      value="32"
+    >
+      32 per Page
+    </option>
+    <option
+      value="64"
+    >
+      64 per Page
+    </option>
+  </select>
+</div>
+`;
+
+exports[`Render Product Display Component snapshot testing for Product Display component 1`] = `"ProductsDisplay"`;
