@@ -11,7 +11,7 @@ const MainComponent = () => {
     const [limit, setLimit] = useState(8);
     const [total, setTotal] = useState(0);
     const dispatch = useDispatch()
-    
+
     useEffect(() => {
         const getData = async () => {
             const res = await fetch(
@@ -22,7 +22,7 @@ const MainComponent = () => {
             setTotal(total)
             setpageCount(Math.ceil(total / limit));
             setdata(data);
-            dispatch({type:"add_product",product:data})
+            dispatch({ type: "add_product", product: data })
         };
 
         getData();
@@ -39,13 +39,13 @@ const MainComponent = () => {
     const handleClick = async (data) => {
         let currentPage = data.selected + 1;
         const dataRecieved = await fetchData(currentPage);
-       setdata(dataRecieved)
-       dispatch({type:"add_product",product:data})
+        setdata(dataRecieved)
+        dispatch({ type: "add_product", product: data })
     };
     return (
         <>
-            <div className="row d-flex justify-content-between mt-3">
-                <div style={{width:"auto"}}>{total} Products</div>
+            <div id="Produts" className="row d-flex justify-content-between mt-3">
+                <div style={{ width: "auto" }}>{total} Products</div>
                 < PageCount limit={limit} setLimit={setLimit} />
             </div>
             <hr />
@@ -56,7 +56,7 @@ const MainComponent = () => {
                     );
                 })}
             </div>
-            
+
             <hr />
             <ReactPaginate
                 previousLabel={"previous"}

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Render Header Component snapshot testing for Header component 1`] = `
+exports[`should test Header component 1`] = `
 <div
   className="d-flex bg-dark text-white justify-content-center py-4"
 >

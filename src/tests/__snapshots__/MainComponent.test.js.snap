@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Main Component snapshot testing for main component 1`] = `"MainComponent"`;
